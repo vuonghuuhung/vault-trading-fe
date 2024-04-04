@@ -1,0 +1,216 @@
+@import '../connectButton/main';
+
+.header-container {
+  padding: 40px 0 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  height: unset;
+
+  .start {
+    display: block;
+  }
+
+  .end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .chain-list {
+      display: flex;
+      height: 40px;
+      padding: 4px;
+      align-items: center;
+      gap: 8px;
+      border-radius: 12px;
+      background: #29384e;
+
+      .item {
+        display: flex;
+        width: 40px;
+        padding: 4px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+
+        svg {
+          opacity: 0.4;
+        }
+
+        &.active {
+          background: #5e687c;
+
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .connect-wrapper {
+      .connect-btn {
+        display: flex;
+        height: 40px;
+        padding: 10px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border-radius: 16px;
+        background: linear-gradient(96deg, #3953dc 4.1%, #9c9be5 146.32%);
+
+        color: #fff;
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+      }
+    }
+  }
+
+  .drawer {
+    .header {
+      display: flex;
+      justify-content: center;
+      .ant-btn {
+        background-color: #29384e;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 12px;
+        padding: 10px;
+
+        box-shadow: none;
+
+        &[ant-click-animating-without-extra-node='true']::after {
+          display: none;
+        }
+      }
+    }
+    .menu {
+      border-top: 1px solid #29384e;
+      backdrop-filter: blur(8px);
+      background-color: rgb(13, 18, 35);
+      position: fixed;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100vw - 10px);
+      padding: 32px;
+
+      display: flex;
+      flex-direction: column;
+
+      .menu-item {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        color: var(--main-black, #5e687c);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 21px */
+        text-decoration: none;
+        margin-top: 20px;
+        span {
+          white-space: nowrap;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover,
+        &.active {
+          color: #fff;
+
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.modal-select-wallet {
+  .wallet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      padding: 23.098px 31.5px 23.902px 32.5px;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+      gap: 24px;
+      cursor: pointer;
+      border-radius: 8px;
+
+      &:hover {
+        background: #313c65;
+      }
+
+      &.disabled {
+        // pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.3;
+
+        &:hover {
+          background: unset;
+        }
+      }
+
+      p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 150%; /* 21px */
+      }
+    }
+  }
+
+  .desc {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    text-decoration-line: underline;
+    color: #798fff;
+
+    a {
+      color: #798fff;
+      transition: 0.3s;
+
+      &:hover {
+        // color: #A9A7FA;
+        opacity: 0.6;
+      }
+    }
+
+    // background: linear-gradient(96deg, #798FFF 4.1%, #A9A7FA 146.32%);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,17 @@
+.app-content {
+  // padding: 32px;
+  min-height: calc(100vh - 128px); // 32px padding + 64px height header
+
+  .container {
+    border-radius: 20px;
+    padding: 25px;
+
+    > span h5.ant-typography {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: gray;
+      margin-bottom: 15px;
+    }
+  }
+}

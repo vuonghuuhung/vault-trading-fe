@@ -1,0 +1,42 @@
+@import './content';
+@import './header';
+@import './sider';
+
+.app-layout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .app-content-layout {
+    flex: 1;
+    margin-left: 310px;
+
+    @include mega_desktop_large_min {
+      padding: 0px 32px 40px 32px;
+    }
+    @include mega_desktop_max {
+      padding: 0px 32px 40px 32px;
+    }
+    @include ultra_tablet_max {
+      padding: 0px 20px 40px 20px;
+    }
+    @include small_tablet_max {
+      margin-left: 0;
+    }
+    @include mobile_max {
+      padding: 0px 16px 40px 16px;
+      margin-left: 0;
+    }
+  }
+
+  .ant-layout-sider-trigger {
+    display: none;
+  }
+
+  background-color: unset;
+
+  .ant-layout {
+    background-color: unset;
+  }
+}

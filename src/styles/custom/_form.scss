@@ -1,0 +1,28 @@
+.error-text {
+  color: $color_red;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.form-item {
+  &__label {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: $color_gray;
+  }
+
+  .ant-input {
+    margin-bottom: 10px;
+  }
+}
+
+.ant-layout {
+  > .ant-layout-header {
+    background: transparent;
+    // background: rgb(13, 18, 35);
+  }
+}

@@ -1,0 +1,10 @@
+.modal {
+  &-close-icon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}

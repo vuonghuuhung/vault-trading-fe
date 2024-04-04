@@ -1,0 +1,45 @@
+.app-header {
+  padding: 0 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: unset;
+  height: 96px;
+
+  .dropdown {
+    &__text {
+      margin-right: 12px;
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+.header-overlay {
+  &__detail {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+
+    .icon {
+      height: 18px;
+      width: 18px;
+      margin-right: 6px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .overlay-menu {
+    border-right: none;
+
+    &__item {
+      padding-left: 6px;
+      width: 133px;
+    }
+  }
+}

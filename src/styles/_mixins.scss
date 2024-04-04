@@ -1,0 +1,39 @@
+@mixin textEllipsis($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@mixin scrollbars() {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+    background-color: $color_cod_gray;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 14px 14px $color_cod_gray;
+    border: solid 4px $color_cod_gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 14px 14px $color_shuttle_gray;
+    border: solid 4px $color_shuttle_gray;
+  }
+}
+
+@mixin fadeInUp() {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

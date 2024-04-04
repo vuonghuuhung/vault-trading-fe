@@ -1,0 +1,44 @@
+html,
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', 'Sora', 'Poppins', sans-serif;
+  color: #fff;
+  min-height: 100%;
+  width: 100%;
+  @include scrollbars();
+
+  #root {
+    min-height: 100%;
+    background-color: rgb(13, 18, 35);
+    background-image: url('./../resources/images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .App {
+      height: 100%;
+      // background: radial-gradient(50% 50% at 50% 50%, rgba(133, 118, 229, 0.20) 0%, rgba(24, 24, 25, 0.00) 100%);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

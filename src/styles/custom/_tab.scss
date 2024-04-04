@@ -1,0 +1,76 @@
+.app-tabs {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5e687c;
+  text-align: center;
+
+  .ant-tabs-nav {
+    margin: 0px; //12px;
+
+    // // 575
+    // @media screen and (max-width: $breakpoint_mobile_max) {
+    //   margin: 10px;
+    // }
+
+    &::before {
+      display: none;
+    }
+
+    .ant-tabs-tab {
+      padding: 0;
+
+      &:hover {
+        color: #fff;
+      }
+
+      .ant-tabs-tab-btn {
+        &:focus,
+        &:active {
+          color: #fff;
+        }
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #5e687c;
+
+        padding: 12px;
+
+        // 575
+        @media screen and (max-width: $breakpoint_mobile_max) {
+          padding: 8px;
+        }
+      }
+    }
+
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0 0 0 12px;
+    }
+
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        color: #fff;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      border-radius: var(--dimension-corner-radius-card-inner, 8px);
+      background: var(--primary-1, linear-gradient(96deg, #3953dc 4.1%, #9c9be5 146.32%));
+      height: 4px;
+    }
+  }
+
+  .ant-tabs-nav-operations {
+    display: none !important;
+  }
+}
+
+.inventory-tabs {
+  .ant-tabs-tab {
+    .ant-tabs-tab-btn {
+      font-size: 14px !important;
+      font-size: #787878;
+    }
+  }
+}

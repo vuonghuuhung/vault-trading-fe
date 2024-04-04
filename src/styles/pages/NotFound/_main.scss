@@ -1,0 +1,30 @@
+.not-found-page-box {
+  background-image: url('/src/resources/images/bgr_Notfound.png');
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 80px 0px;
+}
+
+.notFound-content-1 {
+  margin-top: 100px;
+
+  @include small_tablet_max {
+    margin-top: 50px;
+  }
+  @include mobile_max {
+    display: none;
+  }
+}
+
+.notFound-content-2 {
+  display: none;
+
+  @include mobile_max {
+    display: block;
+  }
+}
